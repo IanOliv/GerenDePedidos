@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Cliente</title>
+<link rel="stylesheet" type="text/css" href="../CSS/CriaCliente.css">
+<link rel="stylesheet" type="text/css"  href="../CSS/Menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+	<header>
+		<ul id="menuul">
+			<li id="menuli"><a id="menua" href="../index.html"><i class="fa fa-home"></i></a></li>
+			<li id="menuli"><li id="menuli" class="dropdown"><a id="menua"
+				href="javascript:void(0)" class="dropbtn">Clientes</a>
+				<div class="dropdown-content drop-style">
+					<a id="menua" >Cadastrar Cliente</a> 
+					<a id="menua" href="../fazTudo?tarefa=ListaClientes&option=lc">Lista Clientes</a>
+					
+				</div></li>
+			<li id="menuli" class="dropdown"><a id="menua"
+				href="javascript:void(0)" class="dropbtn">Produtos</a>
+				<div class="dropdown-content drop-style">
+					<a id="menua" href="CriaProduto.html">Cadastro de Produto</a> 
+					<a id="menua" href="../fazTudo?tarefa=ListaProdutos">Lista Produtos</a>
+					
+				</div></li>
+				<li id="menuli" class="dropdown"><a id="menua"
+				href="javascript:void(0)" class="dropbtn">Pedidos</a>
+				<div class="dropdown-content drop-style">
+					<a id="menua" href="../fazTudo?tarefa=ListaClientes&option=cp">Cadastro de Pedido</a> 
+					<a id="menua" href="../fazTudo?tarefa=ListaPedidos">Lista de Pedidos</a> 
+					
+				</div></li>
+		</ul>
+	</header>
+
+
+
+
+	<div class="container">
+	<form action="/GerenDePedidos/fazTudo?tarefa=CriaCliente" method="POST" id="FormCadastro">
+		
+			<h3>Cadastro de Cliente</h3>
+			<br>
+			
+				<fieldset>
+				<input placeholder="Nome " required  autofocus  type="text" name="nameCliente"> 
+				<input placeholder="Email " required autofocus type="Email" name="emailCliente"> 
+				<input placeholder="Celular "  autofocus type="text" name="celCliente"> 
+				<input placeholder="Telefone "  autofocus type="text" name="telCliente">
+				</fieldset>
+			
+				<fieldset>
+				<fieldset>
+				<h4>Estado:</h4><select  required name="estadoCliente" form="FormCadastro">
+					<option value="">--</option>
+					<option value="AC">AC</option>
+					<option value="AL">AL</option>
+					<option value="AP">AP</option>
+					<option value="AM">AM</option>
+					<option value="BA">BA</option>
+					<option value="CE">CE</option>
+					<option value="DF">DF</option>
+					<option value="ES">ES</option>
+					<option value="GO">GO</option>
+					<option value="MA">MA</option>
+					<option value="MT">MT</option>
+					<option value="MS">MS</option>
+					<option value="MG">MG</option>
+					<option value="PA">PG</option>
+					<option value="PB">PB</option>
+					<option value="PR">PR</option>
+					<option value="PE">PE</option>
+					<option value="PI">PI</option>
+					<option value="RJ">RJ</option>
+					<option value="RN">RN</option>
+					<option value="RS">RS</option>
+					<option value="RO">RO</option>
+					<option value="RR">RR</option>
+					<option value="SC">SC</option>
+					<option value="SP">SP</option>
+					<option value="SE">SE</option>
+					<option value="TO">TO</option>
+				</select>
+				</fieldset> 
+				<input  placeholder="Cidade" required type="text" name="cidadeCliente">
+				<input  placeholder="CEP" required type="text" name="cepCliente"> 
+			
+				<input   placeholder="Endereco" required type="text" name="logCliente">
+				</fieldset>
+			<fieldset>
+		<button name="submit" type="submit" id="contact-submit" >Submit</button>
+    </fieldset>
+		
+	</form>
+</div>
+
+
+
+
+</body>
+</html>
