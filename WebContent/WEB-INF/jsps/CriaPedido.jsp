@@ -27,7 +27,7 @@
 							<c:forEach var="cliente" items="${clientes}">
 								<option value="${cliente.id}">${cliente.nome}</option>
 							</c:forEach>
-						</select> <input type="submit" name="Criar">
+						</select> <button type="submit" name="Criar"></button>
 					</form>
 
 

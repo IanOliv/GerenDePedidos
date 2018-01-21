@@ -34,8 +34,7 @@
 		<form action="/GerenDePedidos/fazTudo?tarefa=ADDPrs" method="POST">
 		<input type="hidden" name="regiao" value="${pedido.cliente.endereco.regiao}">
 		<input type="hidden" name="idPedido" value="${pedido.id}">
-		<input type="Submit" name="Add Produtos">
-		
+		<button type="submit" name="addProdutos"> Adicionar Produtos</button>
 		</form>
 		</div>
 	</div>
